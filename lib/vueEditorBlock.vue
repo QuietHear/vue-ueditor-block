@@ -7,7 +7,7 @@
 * @LastEditTime: 2018-12-06 17:19:01
 */
 <template>
-    <div class="vueEditorBlock extra">
+    <div class="vue-editor-block extra">
         1
     </div>
 </template>
@@ -20,11 +20,11 @@
 
 <!--基础样式-->
 <style scoped>
-  @import "vueEditorBlock.css";
+  @import "style/vueEditorBlock.css";
 </style>
 
 <!--样式扩展-->
 <style scoped>
   /*必需的扩展*/
-  @import "editorExtra.css";
+  @import "style/editorExtra.css";
 </style>
