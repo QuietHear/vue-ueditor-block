@@ -3,7 +3,9 @@
 * @Date: 2019-04-30 10:50:12
 */
 /*
-* @LastEditors: aFei
-* @LastEditTime: 2019-04-30 10:50:13
+ * @LastEditors: afei
+ * @LastEditTime: 2020-12-14 10:58:07
 */
-/*# sourceMappingURL=vueEditorBlock.css.map */
+.vue-editor-block.only-show .edui-editor {
+  border: 0 !important;
+}
