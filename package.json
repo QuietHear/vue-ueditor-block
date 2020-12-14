@@ -1,7 +1,7 @@
 {
   "name": "vue-editor-block",
   "description": "vue版ueditor组件",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "aFei <1106728884@qq.com>",
   "license": "MIT",
   "main": "dist/vue-editor-block.min.js",
@@ -34,6 +34,7 @@
     "vue-router": "^3.0.6",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.4.4",
+    "vue-ueditor-wrap": "^2.4.4",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   }
