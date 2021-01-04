@@ -4,7 +4,10 @@
 	npm i vue-editor-block
 
 ### 0. 依赖组件
-* 安装依赖 `npm i vue-ueditor-wrap`
+>
+	// 已经集成了的
+	vue-ueditor-wrap
+>
 
 ### 1. 下载静态资源到本地
 在本node包中下载static中的资源，前端的为UEditor文件夹，后端根据类型自己选择需要版本的.zip文件
