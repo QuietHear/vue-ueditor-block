@@ -4,16 +4,19 @@
 */
 /*
  * @LastEditors: afei
- * @LastEditTime: 2020-12-14 14:01:35
+ * @LastEditTime: 2021-05-17 15:26:48
 */
 <template>
-  <vue-ueditor-wrap
-    :class="['vue-editor-block', onlyShow ? 'only-show' : '', cname]"
-    v-model="msg"
-    :config="config"
-    @ready="ready"
-    :init="myInit"
-  ></vue-ueditor-wrap>
+  <div :class="['vue-editor-block', onlyShow ? 'only-show' : '', cname]">
+    <vue-ueditor-wrap
+      v-model="msg"
+      :config="config"
+      @ready="ready"
+      :init="myInit"
+      v-if="!onlyShow"
+    ></vue-ueditor-wrap>
+    <div v-html="msg" v-else></div>
+  </div>
 </template>
 
 <script>
@@ -114,7 +117,21 @@ export default {
       example: "",
     };
   },
+  watch: {
+    content() {
+      this.msg = this.content;
+    },
+  },
+  mounted() {
+    this.init();
+  },
   methods: {
+    init() {
+      for (let key in this.extraConfig) {
+        this.config[key] = this.extraConfig[key];
+      }
+      this.msg = this.content;
+    },
     // 5、 你可以在ready方法中拿到editorInstance实例,之后的所有API就和官方的实例一样了,Just Do What You Want! http://fex.baidu.com/ueditor/#api-common
     ready(ue) {
       this.example = ue;
@@ -127,6 +144,7 @@ export default {
     msgChange() {
       this.$emit("changeValue", this.msg);
       this.$emit("change", this.msg);
+      this.$parent.clearValidate && this.$parent.clearValidate();
     },
     // 6. 结合init方法,自定义按钮
     myInit() {
@@ -162,18 +180,6 @@ export default {
     getExample() {
       return this.example;
     },
-  },
-  created() {
-    if (this.onlyShow) {
-      this.config.autoHeightEnabled = true;
-      this.config.toolbars = [];
-      this.config.wordCount = false;
-      this.config.readonly = true;
-    }
-    for (let key in this.extraConfig) {
-      this.config[key] = this.extraConfig[key];
-    }
-    this.msg = this.content;
   },
 };
 </script>

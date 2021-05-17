@@ -1,7 +1,7 @@
 {
   "name": "vue-editor-block",
   "description": "vue版ueditor组件",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "author": "aFei <1106728884@qq.com>",
   "license": "MIT",
   "main": "dist/vue-editor-block.min.js",
