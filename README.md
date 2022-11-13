@@ -1,4 +1,4 @@
-# uEditor（vue2版）
+# UEditor（vue2版）
 [**vue3版本**](https://github.com/QuietHear/vue-ele-nav-plus '浏览') | ***vue2版本***
 
 
