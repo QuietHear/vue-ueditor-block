@@ -1,7 +1,7 @@
 {
   "name": "vue-editor-block",
-  "description": "vue版ueditor组件",
-  "version": "1.2.2",
+  "description": "vue2版ueditor组件",
+  "version": "1.2.3",
   "author": "aFei <1106728884@qq.com>",
   "license": "MIT",
   "main": "dist/vue-editor-block.min.js",
@@ -11,10 +11,11 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "keywords": [
-    "Vue",
+    "Vue2",
     "ueditor"
   ],
-  "homepage": "https://github.com/QuietHear/vue-editor-block",
+  "homepage": "https://github.com/QuietHear",
+  "repository": "https://github.com/QuietHear/vue-editor-block",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",

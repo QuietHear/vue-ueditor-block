@@ -1,18 +1,22 @@
-# ueditor组件 vue版
+# uEditor（vue2版）
+[**vue3版本**](https://github.com/QuietHear/vue-ele-nav-plus '浏览') | ***vue2版本***
+
 
 ## 安装
 	npm i vue-editor-block
+	// 已经集成了vue-ueditor-wrap
 
-### 0. 依赖组件
->
-	// 已经集成了的
-	vue-ueditor-wrap
->
+## 使用
+	import vueEditorBlock from 'vue-editor-block';
+	
+	Vue.use(vueEditorBlock);
 
-### 1. 下载静态资源到本地
+
+## 1. 下载静态资源到本地
 在本node包中下载static中的资源，前端的为UEditor文件夹，后端根据类型自己选择需要版本的.zip文件
 
-### 2. 参数
+
+## 2. 参数
 * `v-model`：输入区对应的内容，双向绑定-->String;非必传
 * `static-url`：静态资源文件地址,指向index.html-->String;非必传;默认'/static/UEditor/'
 * `cname`：自定义class-->String;非必传
@@ -22,10 +26,12 @@
 * `extra-config`：ueditor配置项,如与预设相同,则会覆盖之前的-->Object;非必传
 * `@change`：内容改变监听-->返回当前内容
 
+
 ## 3. 方法
 * `getExample`：获取当前ueditor的实例，可以使用其API
 
-### 4. 组件预设ueditor配置
+
+## 4. 组件预设ueditor配置
 	// 编辑器不自动被内容撑高
     autoHeightEnabled: false,
     // 定制菜单
@@ -55,5 +61,6 @@
     // 开启字数统计
     wordCount: true,
 
-### 5. 官方文档
+
+## 5. 官方文档
 [http://fex.baidu.com/ueditor/#start-start](http://fex.baidu.com/ueditor/#start-start '文档')
