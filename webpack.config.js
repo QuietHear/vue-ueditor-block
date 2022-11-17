@@ -1,6 +1,10 @@
 /*
- * @LastEditors: afei
- * @LastEditTime: 2020-12-09 12:34:07
+* @Author: aFei
+* @Date: 2018-11-26 10:51:05
+*/
+/*
+ * @LastEditors: aFei
+ * @LastEditTime: 2022-11-17 11:37:22
 */
 var path = require('path');
 var webpack = require('webpack');
@@ -10,8 +14,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'vue-editor-block.min.js',
-    library: 'vueEditorBlock',
+    filename: 'vue-ueditor-block.min.js',
+    library: 'vueUeditorBlock',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },

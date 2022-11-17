@@ -1,15 +1,15 @@
 # UEditor（vue2版）
-[**vue3版本**](https://github.com/QuietHear/vue-ele-nav-plus '浏览') | ***vue2版本***
+[**vue3版本**](https://github.com/QuietHear/vue-ueditor-block-plus '浏览') | ***vue2版本***
 
 
 ## 安装
-	npm i vue-editor-block
+	npm i vue-ueditor-block
 	// 已经集成了vue-ueditor-wrap
 
 ## 使用
-	import vueEditorBlock from 'vue-editor-block';
+	import vueUeditorBlock from 'vue-ueditor-block';
 	
-	Vue.use(vueEditorBlock);
+	Vue.use(vueUeditorBlock);
 
 
 ## 1. 下载静态资源到本地

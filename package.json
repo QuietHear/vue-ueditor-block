@@ -1,10 +1,10 @@
 {
-  "name": "vue-editor-block",
+  "name": "vue-ueditor-block",
   "description": "vue2版ueditor组件",
-  "version": "1.2.3",
+  "version": "1.0.0",
   "author": "aFei <1106728884@qq.com>",
   "license": "MIT",
-  "main": "dist/vue-editor-block.min.js",
+  "main": "dist/vue-ueditor-block.min.js",
   "private": false,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
@@ -15,7 +15,7 @@
     "ueditor"
   ],
   "homepage": "https://github.com/QuietHear",
-  "repository": "https://github.com/QuietHear/vue-editor-block",
+  "repository": "https://github.com/QuietHear/vue-ueditor-block",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",

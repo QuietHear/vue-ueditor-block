@@ -3,11 +3,11 @@
 * @Date: 2018-11-26 10:51:05
 */
 /*
- * @LastEditors: afei
- * @LastEditTime: 2021-05-17 15:26:48
+ * @LastEditors: aFei
+ * @LastEditTime: 2022-11-17 11:36:05
 */
 <template>
-  <div :class="['vue-editor-block', onlyShow ? 'only-show' : '', cname]">
+  <div :class="['vue-ueditor-block', onlyShow ? 'only-show' : '', cname]">
     <vue-ueditor-wrap
       v-model="msg"
       :config="config"
@@ -24,7 +24,7 @@
 import VueUeditorWrap from "vue-ueditor-wrap";
 
 export default {
-  name: "vueEditorBlock",
+  name: "vueUeditorBlock",
   // 2、注册组件
   components: {
     VueUeditorWrap,
@@ -186,5 +186,5 @@ export default {
 
 <!--基础样式-->
 <style scoped>
-@import "style/vueEditorBlock.css";
+@import "style/vueUeditorBlock.css";
 </style>
