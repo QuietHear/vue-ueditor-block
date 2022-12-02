@@ -18,12 +18,19 @@
 
 ## 2. 参数
 * `v-model`：输入区对应的内容，双向绑定-->String;非必传
+
 * `static-url`：静态资源文件地址,指向index.html-->String;非必传;默认'/static/UEditor/'
+
 * `cname`：自定义class-->String;非必传
+
 * `upload-url`：图片上传的接口,后端可以看[文档](http://fex.baidu.com/ueditor/#server-deploy '后端文档')-->String;非必传
+
 * `http-params`：请求附带参数-->Object;非必传
+
 * `only-show`：只展示内容-->Boolean;非必传;默认false
+
 * `extra-config`：ueditor配置项,如与预设相同,则会覆盖之前的-->Object;非必传
+
 * `@change`：内容改变监听-->返回当前内容
 
 
