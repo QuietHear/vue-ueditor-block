@@ -23,7 +23,7 @@
 
 * `cname`：自定义class-->String;非必传
 
-* `upload-url`：图片上传的接口,后端可以看[文档](http://fex.baidu.com/ueditor/#server-deploy '后端文档')-->String;非必传
+* `upload-url`：图片上传的接口,后端可以看[文档](http://fex-team.github.io/ueditor/#server-deploy '后端文档')-->String;非必传
 
 * `http-params`：请求附带参数-->Object;非必传
 
@@ -70,4 +70,4 @@
 
 
 ## 5. 官方文档
-[http://fex.baidu.com/ueditor/#start-start](http://fex.baidu.com/ueditor/#start-start '文档')
+[http://fex-team.github.io/ueditor/#start-start](http://fex-team.github.io/ueditor/#start-start '文档')

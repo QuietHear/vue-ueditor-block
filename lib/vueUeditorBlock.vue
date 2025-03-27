@@ -4,7 +4,7 @@
 */
 /*
  * @LastEditors: aFei
- * @LastEditTime: 2022-11-17 11:36:05
+ * @LastEditTime: 2025-03-27 14:27:37
 */
 <template>
   <div :class="['vue-ueditor-block', onlyShow ? 'only-show' : '', cname]">
@@ -79,7 +79,7 @@ export default {
     return {
       // 3、v-model绑定数据
       msg: "",
-      // 4、根据项目需求自行配置,具体配置参见ueditor.config.js源码或 http://fex.baidu.com/ueditor/#start-start
+      // 4、根据项目需求自行配置,具体配置参见ueditor.config.js源码或 http://fex-team.github.io/ueditor/#start-start
       config: {
         // 如果需要上传功能,找后端小伙伴要服务器接口地址
         serverUrl: this.uploadUrl,
@@ -132,7 +132,7 @@ export default {
       }
       this.msg = this.content;
     },
-    // 5、 你可以在ready方法中拿到editorInstance实例,之后的所有API就和官方的实例一样了,Just Do What You Want! http://fex.baidu.com/ueditor/#api-common
+    // 5、 你可以在ready方法中拿到editorInstance实例,之后的所有API就和官方的实例一样了,Just Do What You Want! http://fex-team.github.io/ueditor/#api-common
     ready(ue) {
       this.example = ue;
       if (!this.httpParams.none) {
